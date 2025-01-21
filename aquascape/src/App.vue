@@ -22,11 +22,9 @@ export default {
 </script>
 
 <style>
-/* Global Styles */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
- /* background-image: url(assets/img/background.jpg);*/
  background-color: #1e98df;
  background-repeat: no-repeat;
   color: #333;
@@ -38,10 +36,9 @@ body {
   min-height: 100vh;
 }
 main {
-  flex: 1; /* Ensures the main content takes up all available space */
+  flex: 1; 
 }
 main {
   flex-grow: 1;
- /* padding: 20px;*/
 }
 </style>

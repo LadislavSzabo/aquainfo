@@ -3,7 +3,7 @@
     <nav>
       <ul>
         <li><router-link to="/">Home</router-link></li>
-        <li><router-link to="/aquascaping">Aquascaping</router-link></li>
+        <li><router-link to="/about">About</router-link></li>
         <li><router-link to="/aquarium-fishes">Fishes</router-link></li>
         <li><router-link to="/article-list">Articles</router-link></li>
       </ul>

@@ -19,8 +19,6 @@
           <option value="Herbivorous">Herbivorous</option>
         </select>
       </div>
-  
-      <!-- Fish List -->
       <div class="fish-list">
         <FishCard
           v-for="(fish, index) in filteredFishes"
@@ -38,7 +36,7 @@
   </template>
   
   <script>
-  import { useFishStore } from "../stores/fish.js"; // Import fish store
+  import { useFishStore } from "../stores/fish.js"; 
   import FishCard from "../components/FishCard.vue";
   import { computed, ref } from "vue";
   
@@ -48,14 +46,11 @@
     setup() {
       const fishStore = useFishStore();
   
-      // Fetch the fish data when the component is created
       fishStore.fetchFishData();
   
-      // Reactive filter criteria
       const selectedWater = ref("");
       const selectedDiet = ref("");
   
-      // Computed property to filter fishes
       const filteredFishes = computed(() => {
         return fishStore.filterFishes({
           water: selectedWater.value,

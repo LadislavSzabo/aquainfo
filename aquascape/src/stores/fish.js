@@ -2,7 +2,7 @@ import { defineStore } from "pinia";
 
 export const useFishStore = defineStore("fishStore", {
     state: () => ({
-        fishes: [], // Empty array to hold fish data
+        fishes: [],
     }),
     getters: {
         filterFishes: (state) => (criteria) => {
@@ -14,13 +14,12 @@ export const useFishStore = defineStore("fishStore", {
         },
     },
     actions: {
-        // Action to fetch fish data from a JSON file
         async fetchFishData() {
             try {
-                const response = await fetch("/src/data/FishData.json"); // Adjust path based on where your JSON file is
+                const response = await fetch("/src/data/FishData.json");
                 if (response.ok) {
                     const data = await response.json();
-                    this.fishes = data; // Set the fish data into the store
+                    this.fishes = data;
                 } else {
                     console.error("Failed to load fish data.");
                 }
@@ -29,7 +28,6 @@ export const useFishStore = defineStore("fishStore", {
             }
         },
 
-        // Action to get fish by name
         getFishByName(name) {
             return this.fishes.filter((fish) => fish.name === name);
         },

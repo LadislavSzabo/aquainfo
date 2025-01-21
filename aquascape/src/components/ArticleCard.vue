@@ -1,31 +1,43 @@
 <template>
   <div class="article-card">
-    <router-link :to="`/article/${id}`" class="article-link">
-      <div class="article-content">
+    <div class="article-content">
+      <router-link :to="`/article/${id}`" class="article-link">
         <h3>{{ name }}</h3>
         <p>{{ description }}</p>
-        <button class="read-more">Read More</button>
+      </router-link>
+      <div class="card-actions">
+        
+        <button class="favorite-button" @click="toggleFavorite">
+          <span :class="{ favorited: isFavorited }">★</span>
+        </button>
       </div>
-    </router-link>
+    </div>
   </div>
 </template>
 
 <script>
+import { computed } from "vue";
+import { useArticleStore } from "../stores/articles.js";
+
 export default {
   name: "ArticleCard",
   props: {
-    name: {
-      type: String,
-      required: true,
-    },
-    description: {
-      type: String,
-      required: true,
-    },
-    id: {
-      type: Number,
-      required: true,
-    },
+    name: { type: String, required: true },
+    description: { type: String, required: true },
+    id: { type: Number, required: true },
+  },
+  setup(props) {
+    const articleStore = useArticleStore();
+
+    const isFavorited = computed(() =>
+      articleStore.isFavorite(props.id)
+    );
+
+    const toggleFavorite = () => {
+      articleStore.toggleFavorite(props.id);
+    };
+
+    return { isFavorited, toggleFavorite };
   },
 };
 </script>
@@ -37,7 +49,7 @@ export default {
   border: 1px solid #e0e0e0;
   border-radius: 10px;
   overflow: hidden;
-  background: #0e1977;
+  background: #0a3d62;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s, box-shadow 0.3s;
   padding: 10px 10px;
@@ -83,5 +95,28 @@ export default {
 
 .read-more:hover {
   background-color: #2980b9;
+}
+.card-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.favorite-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: #bbb;
+  transition: color 0.3s;
+}
+
+.favorite-button .favorited {
+  color: #f39c12; /* Gold color for favorited */
+}
+
+.favorite-button:hover {
+  color: #f39c12;
 }
 </style>

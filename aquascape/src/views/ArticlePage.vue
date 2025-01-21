@@ -27,14 +27,12 @@ export default {
   setup(props) {
     const articleStore = useArticleStore();
 
-    // Fetch articles if the store is empty
     const fetchArticle = async () => {
       if (articleStore.articles.length === 0) {
         await articleStore.fetchArticles();
       }
     };
 
-    // Find the article by its ID (reactively updates when store changes)
     const article = computed(() =>
       articleStore.articles.find((a) => a.id === Number(props.id))
     );
@@ -56,11 +54,14 @@ export default {
   margin: 50px auto;
   padding: 20px;
   background: #ffffff;
+  color: #0a3d62;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   font-family: "Arial", sans-serif;
 }
-
+.article-page h1{
+  color: #0a3d62;
+}
 .article-header {
   text-align: center;
   margin-bottom: 30px;
@@ -68,7 +69,7 @@ export default {
 
 .article-header h1 {
   font-size: 2.5rem;
-  color: #000000;
+  color: #0a3d62;
   margin-bottom: 10px;
 }
 

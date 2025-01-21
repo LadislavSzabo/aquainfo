@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Banner title="Welcome to Aquarium World" subtitle="Explore tips, tricks, and everything about aquariums!" />
+    <Banner title="Welcome to Aqua Info" subtitle="Explore tips, tricks, and everything about aquariums!" />
     <div class="home-sections">
       <div class="section1">
         <h2>Explore Our Articles</h2>

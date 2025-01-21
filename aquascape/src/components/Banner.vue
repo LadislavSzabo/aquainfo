@@ -33,8 +33,6 @@
     background-image: url(../assets/img/background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-  /*
-    background: linear-gradient(135deg, #3498db, #2ecc71);*/
     color: #ffffff;
     text-align: center;
     padding: 20px;

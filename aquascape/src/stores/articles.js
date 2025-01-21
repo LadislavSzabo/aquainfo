@@ -2,14 +2,14 @@ import { defineStore } from "pinia";
 
 export const useArticleStore = defineStore("articleStore", {
     state: () => ({
-        articles: [], // Hold the articles here
+        articles: [],
+        favorites: JSON.parse(localStorage.getItem("favorites")) || [],
     }),
     actions: {
         async fetchArticles() {
             if (this.articles.length === 0) {
-                // Fetch articles only if not already fetched
                 try {
-                    const response = await fetch("/src/data/articles.json"); // Adjust the path if necessary
+                    const response = await fetch("/src/data/articles.json");
                     if (response.ok) {
                         const data = await response.json();
                         this.articles = data;
@@ -20,6 +20,18 @@ export const useArticleStore = defineStore("articleStore", {
                     console.error("Error fetching articles:", error);
                 }
             }
+        },
+        toggleFavorite(articleId) {
+            if (this.favorites.includes(articleId)) {
+                this.favorites = this.favorites.filter((id) => id !== articleId);
+            } else {
+                this.favorites.push(articleId);
+            }
+
+            localStorage.setItem("favorites", JSON.stringify(this.favorites));
+        },
+        isFavorite(articleId) {
+            return this.favorites.includes(articleId);
         },
     },
 });

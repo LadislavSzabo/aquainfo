@@ -12,12 +12,13 @@
     <!-- Article list -->
     <div class="article-list">
       <ArticleCard
-        v-for="(article, index) in setupArticles"
-        :key="index"
-        :name="article.name"
-        :description="article.description"
-        :id="article.id"
-      />
+  v-for="(article, index) in setupArticles"
+  :key="index"
+  :name="article.name"
+  :description="article.description"
+  :id="article.id"
+/>
+
     </div>
   </div>
 </template>
@@ -37,14 +38,12 @@ export default {
   setup() {
     const articleStore = useArticleStore();
 
-    // Fetch articles on mount if not already fetched
     onMounted(() => {
       if (articleStore.articles.length === 0) {
         articleStore.fetchArticles();
       }
     });
 
-    // Computed property to get articles from the store
     const setupArticles = computed(() => articleStore.articles);
 
     return { setupArticles };
