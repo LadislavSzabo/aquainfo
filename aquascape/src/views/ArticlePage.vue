@@ -1,0 +1,109 @@
+<template>
+  <div v-if="article">
+    <div class="article-page">
+      <h1>{{ article.name }}</h1>
+      <p class="article-description">{{ article.description }}</p>
+      <div v-html="article.text"></div>
+      <router-link to="/article-list" class="back-button">← Back to Articles</router-link>
+    </div>
+  </div>
+  <div v-else>
+    <p>Loading article...</p>
+  </div>
+</template>
+
+<script>
+import { onMounted, computed } from "vue";
+import { useArticleStore } from "../stores/articles.js";
+
+export default {
+  name: "ArticlePage",
+  props: {
+    id: {
+      type: String,
+      required: true,
+    },
+  },
+  setup(props) {
+    const articleStore = useArticleStore();
+
+    // Fetch articles if the store is empty
+    const fetchArticle = async () => {
+      if (articleStore.articles.length === 0) {
+        await articleStore.fetchArticles();
+      }
+    };
+
+    // Find the article by its ID (reactively updates when store changes)
+    const article = computed(() =>
+      articleStore.articles.find((a) => a.id === Number(props.id))
+    );
+
+    onMounted(async () => {
+      await fetchArticle();
+    });
+
+    return {
+      article,
+    };
+  },
+};
+</script>
+
+<style scoped>
+.article-page {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  font-family: "Arial", sans-serif;
+}
+
+.article-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.article-header h1 {
+  font-size: 2.5rem;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.article-header .article-description {
+  font-size: 1.2rem;
+  color: #7f8c8d;
+  margin: 0;
+}
+
+.article-body {
+  font-size: 1rem;
+  color: #34495e;
+  line-height: 1.6;
+  margin-top: 20px;
+}
+
+.article-body p {
+  margin-bottom: 15px;
+}
+
+.back-button {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: #ffffff;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.back-button:hover {
+  background-color: #2980b9;
+}
+h1{
+  color: #000;
+}
+</style>

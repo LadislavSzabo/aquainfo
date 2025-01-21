@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "name": "Aquascaping Basics",
+        "description": "An introduction to the fundamentals of aquascaping.",
+        "text": "This is the full article about aquascaping basics. It covers all the important aspects of setting up an aquascape."
+    },
+    {
+        "id": 2,
+        "name": "Aquarium Setup for Beginners",
+        "description": "A step-by-step guide to setting up your first aquarium.",
+        "text": "Plan the size of the pool you want to install, depending on your space and budget. Preferably don't start with a small tank of 10-15 litres! It's important to know that the bigger the tank, the less work it is, the easier it is to maintain and, last but not least, the more attractive it is. The recommended minimum size is 30 litres. Make sure you have the right scaffolding or table ready. Never place it on a desk or a flexible wall shelf, as this can easily lead to glass breakage and water damage. For larger aquariums (over 100 litres), make a stand from a closed section or furniture board. Today, several companies sell complete aquariums with built-in lighting and furniture for under the tank. These are reliable and decorative solutions. The thickness of the aquarium glass depends on the size of the aquarium. Recommended values are: up to 15 litres 3 mm, up to 30 litres 4 mm, up to 50 litres 5 mm, up to 120 litres 6 mm, up to 300 litres 8 mm. up to 500 litres 10 mm. Of course, if the aquarium is taller than usual, it is advisable to use glass one size thicker. This means, for example, that for a 300-litre aquarium with a height of 60-65 cm, 10 mm glass is the best choice. Place a flexible material under the aquarium (Styrofoam, polyfoam, cardboard plastic) to absorb any unevenness of the support shelf. There should not be any protruding nails or screw heads. If possible, the aquarium should lie flat across the entire surface, with no hanging edges."
+    },
+    {
+        "id": 3,
+        "name": "Types of aquariums",
+        "description": "Learn about what kind of aquariums are there",
+        "text": "A well-finished aquarium should be in harmony with the rest of the room, be visible and easy to use. The latter means that the technical equipment used should be accessible and easy to clean. Freshwater aquariums in the home can be divided into four basic types:Dutch-type aquariums have little or no fish. The fish are often very rare or even non-existent. This requires a large pool at least one metre long and good, even lighting. The sight of aesthetically arranged plants soothes the eye and gives the observer a pleasant atmosphere. A biotope aquarium is a miniature slice of nature. It is a matching assemblage of fish and plants in their original habitat. A biotope aquarium is not always easy to create. Sometimes the vegetation in certain areas is very sparse, species-poor or the fish may not be showy. In this case, choose the plants or fish for the installation according to the nearby areas! A paludarium is a combination of an aquarium and a terrarium. It consists of an aquatic section and a shoreline specific to that part of the world. The water is inhabited by fish or amphibians with aquatic plants, and the shore is inhabited by marsh and terrestrial plants, possibly reptiles. The paludarium can be made more decorative with bromeliads and orchids. Maintenance requires careful care and a lot of work, as well as sophisticated technical equipment (the leaves of the plants must not be left overnight, otherwise they can rot in a short time). Therefore, a separate fan blows off the vapour, like a sort of artificial wind. But at the same time, the desired humidity must be present for the plants to grow properly.) This is probably why we rarely see paludariums as a furnishing item."
+    },
+    {
+        "id": 4,
+        "name": "How to maintain clear water in your aquarium",
+        "description": "Learn about the secrets of the clear and healthy water for your fish!",
+        "text": "From a nutritional point of view, the most important environmental factor for fish is water. Aquarium water must have a number of physical and chemical properties to be suitable for our fish. The most important physical properties are temperature, colour, odour and oxygen content. Of the chemical properties, the most physiologically important are the solute content (hardness) and chemistry (pH) of the water. The temperature of the water. All species of fish require a specific water temperature for keeping and breeding. In general, cold-water fish can be kept at water temperatures between 5°C and 24°C: tropical species require water temperatures between 18°C and 30°C. These are the extreme limits. Within these limits, the optimum water temperature requirements of fish species vary. Aquarium water temperature is subject to daily fluctuations. It would be most natural for the water temperature to drop by 2-3°C lower at night than during the day, thus approximately mimicking the daily temperature fluctuations of open water. This kind of temperature fluctuation in the aquarium mainly reflects the day/night differences in the intensity of the room heating when heating day/night with a fixed heating value heater."
+    }
+]

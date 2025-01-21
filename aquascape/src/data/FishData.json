@@ -1,0 +1,263 @@
+[
+    {
+        "image": "../src/assets/img/neon.jpg",
+        "name": "Neon Tetra",
+        "scientificName": "Paracheirodon innesi",
+        "water": "freshwater",
+        "waterParams": "pH: 6.0-7.0, Temperature: 24-28°C",
+        "diet": "Omnivorous",
+        "tankSize": "40 litres minimum"
+    },
+    {
+        "image": "../src/assets/img/betta.jpg",
+        "name": "Betta Fish",
+        "scientificName": "Betta splendens",
+        "water": "freshwater",
+        "waterParams": "pH: 6.5-7.5, Temperature: 26-28°C",
+        "diet": "Carnivorous",
+        "tankSize": "30 litres minimum"
+    },
+    {
+        "image": "../src/assets/img/guppy.jpg",
+        "name": "Guppy",
+        "scientificName": "Poecilia reticulata",
+        "water": "freshwater",
+        "waterParams": "pH: 7.0-8.0, Temperature: 24-28°C",
+        "diet": "Omnivorous",
+        "tankSize": "40 liters minimum"
+    },
+    {
+        "image": "../src/assets/img/angelfish.jpg",
+        "name": "Angelfish",
+        "scientificName": "Pterophyllum scalare",
+        "water": "freshwater",
+        "waterParams": "pH: 6.5-7.5, Temperature: 25-28°C",
+        "diet": "Omnivorous",
+        "tankSize": "70 liters minimum"
+    },
+    {
+        "image": "../src/assets/img/galaxy.jpg",
+        "name": "Pearl Danio",
+        "scientificName": "Danio Margaritatus",
+        "water": "freshwater",
+        "waterParams": "pH: 6.5-7.5, Temperature: 25-28°C",
+        "diet": "Omnivorous",
+        "tankSize": "40 liters minimum"
+    },
+    {
+        "image": "../src/assets/img/zebradanio.jpg",
+        "name": "Zebra Danio",
+        "scientificName": "Danio rerio",
+        "water": "freshwater",
+        "waterParams": "pH: 6.5-7.5, Temperature: 18-24°C",
+        "diet": "Omnivorous",
+        "tankSize": "40 liters minimum"
+    },
+    {
+        "image": "../src/assets/img/discus.jpg",
+        "name": "Discus",
+        "scientificName": "Symphysodon aequifasciatus",
+        "water": "freshwater",
+        "waterParams": "pH: 6.0-6.5, Temperature: 26-30°C",
+        "diet": "Omnivorous",
+        "tankSize": "200 liters minimum"
+    },
+    {
+        "image": "../src/assets/img/oscarfish.jpg",
+        "name": "Oscar Fish",
+        "scientificName": "Astronotus ocellatus",
+        "water": "freshwater",
+        "waterParams": "pH: 6.0-8.0, Temperature: 22-27°C",
+        "diet": "Carnivorous",
+        "tankSize": "200 liters minimum"
+    },
+    {
+        "image": "../src/assets/img/cherrybarb.jpg",
+        "name": "Cherry Barb",
+        "scientificName": "Puntius titteya",
+        "water": "freshwater",
+        "waterParams": "pH: 6.0-7.5, Temperature: 22-27°C",
+        "diet": "Omnivorous",
+        "tankSize": "40 liters minimum"
+    },
+    {
+        "image": "../src/assets/img/pearlgourami.jpg",
+        "name": "Pearl Gourami",
+        "scientificName": "Trichopodus leerii",
+        "water": "freshwater",
+        "waterParams": "pH: 6.5-8.0, Temperature: 24-28°C",
+        "diet": "Omnivorous",
+        "tankSize": "70 liters minimum"
+    },
+    {
+        "image": "../src/assets/img/harlequinrasbora.jpg",
+        "name": "Harlequin Rasbora",
+        "scientificName": "Trigonostigma heteromorpha",
+        "water": "freshwater",
+        "waterParams": "pH: 6.0-7.5, Temperature: 22-27°C",
+        "diet": "Omnivorous",
+        "tankSize": "40 liters minimum"
+    },
+    {
+        "image": "../src/assets/img/corydoras.jpg",
+        "name": "Corydoras Catfish",
+        "scientificName": "Corydoras spp.",
+        "water": "freshwater",
+        "waterParams": "pH: 6.0-7.8, Temperature: 22-26°C",
+        "diet": "Omnivorous",
+        "tankSize": "60 liters minimum"
+    },
+    {
+        "image": "../src/assets/img/plecostomus.jpg",
+        "name": "Plecostomus",
+        "scientificName": "Hypostomus plecostomus",
+        "water": "freshwater",
+        "waterParams": "pH: 6.5-7.5, Temperature: 22-30°C",
+        "diet": "Herbivorous",
+        "tankSize": "150 liters minimum"
+    },
+    {
+        "image": "../src/assets/img/clownloach.jpg",
+        "name": "Clown Loach",
+        "scientificName": "Chromobotia macracanthus",
+        "water": "freshwater",
+        "waterParams": "pH: 6.0-7.5, Temperature: 24-30°C",
+        "diet": "Omnivorous",
+        "tankSize": "300 liters minimum"
+    },
+    {
+        "image": "../src/assets/img/blackmolly.jpg",
+        "name": "Black Molly",
+        "scientificName": "Poecilia sphenops",
+        "water": "freshwater",
+        "waterParams": "pH: 7.0-8.5, Temperature: 24-28°C",
+        "diet": "Omnivorous",
+        "tankSize": "40 liters minimum"
+    },
+    {
+        "image": "../src/assets/img/swordtail.jpg",
+        "name": "Swordtail",
+        "scientificName": "Xiphophorus hellerii",
+        "water": "freshwater",
+        "waterParams": "pH: 7.0-8.0, Temperature: 22-28°C",
+        "diet": "Omnivorous",
+        "tankSize": "40 liters minimum"
+    },
+    {
+        "image": "../src/assets/img/dwarfgourami.jpg",
+        "name": "Dwarf Gourami",
+        "scientificName": "Trichogaster lalius",
+        "water": "freshwater",
+        "waterParams": "pH: 6.0-7.5, Temperature: 24-28°C",
+        "diet": "Omnivorous",
+        "tankSize": "40 liters minimum"
+    },
+    {
+        "image": "../src/assets/img/killifish.jpg",
+        "name": "Killifish",
+        "scientificName": "Aphyosemion spp.",
+        "water": "freshwater",
+        "waterParams": "pH: 6.0-7.5, Temperature: 22-26°C",
+        "diet": "Omnivorous",
+        "tankSize": "30 liters minimum"
+    },
+    {
+        "image": "../src/assets/img/clownfish.jpg",
+        "name": "Clownfish",
+        "scientificName": "Amphiprioninae",
+        "water": "saltwater",
+        "waterParams": "pH: 8.0-8.4, Temperature: 24-28°C",
+        "diet": "Omnivorous",
+        "tankSize": "40 liters minimum"
+    },
+    {
+        "image": "../src/assets/img/bluetang.jpg",
+        "name": "Blue Tang",
+        "scientificName": "Paracanthurus hepatus",
+        "water": "saltwater",
+        "waterParams": "pH: 8.1-8.4, Temperature: 25-28°C",
+        "diet": "Herbivorous",
+        "tankSize": "200 liters minimum"
+    },
+    {
+        "image": "../src/assets/img/firefish.jpg",
+        "name": "Firefish",
+        "scientificName": "Nemateleotris magnifica",
+        "water": "saltwater",
+        "waterParams": "pH: 8.0-8.4, Temperature: 24-27°C",
+        "diet": "Carnivorous",
+        "tankSize": "40 liters minimum"
+    },
+    {
+        "image": "../src/assets/img/royalgramma.jpg",
+        "name": "Royal Gramma",
+        "scientificName": "Gramma loreto",
+        "water": "saltwater",
+        "waterParams": "pH: 8.1-8.4, Temperature: 23-27°C",
+        "diet": "Carnivorous",
+        "tankSize": "30 liters minimum"
+    },
+    {
+        "image": "../src/assets/img/mandarin.jpg",
+        "name": "Mandarin Fish",
+        "scientificName": "Synchiropus splendidus",
+        "water": "saltwater",
+        "waterParams": "pH: 8.1-8.4, Temperature: 24-26°C",
+        "diet": "Carnivorous",
+        "tankSize": "100 liters minimum"
+    },
+    {
+        "image": "../src/assets/img/yellowtang.jpg",
+        "name": "Yellow Tang",
+        "scientificName": "Zebrasoma flavescens",
+        "water": "saltwater",
+        "waterParams": "pH: 8.1-8.4, Temperature: 25-28°C",
+        "diet": "Herbivorous",
+        "tankSize": "200 liters minimum"
+    },
+    {
+        "image": "../src/assets/img/coralbeauty.jpg",
+        "name": "Coral Beauty Angelfish",
+        "scientificName": "Centropyge bispinosa",
+        "water": "saltwater",
+        "waterParams": "pH: 8.0-8.4, Temperature: 24-27°C",
+        "diet": "Omnivorous",
+        "tankSize": "100 liters minimum"
+    },
+    {
+        "image": "../src/assets/img/chalkbass.jpg",
+        "name": "Chalk Bass",
+        "scientificName": "Serranus tortugarum",
+        "water": "saltwater",
+        "waterParams": "pH: 8.0-8.4, Temperature: 24-27°C",
+        "diet": "Carnivorous",
+        "tankSize": "40 liters minimum"
+    },
+    {
+        "image": "../src/assets/img/ocellarisclownfish.jpg",
+        "name": "Ocellaris Clownfish",
+        "scientificName": "Amphiprion ocellaris",
+        "water": "saltwater",
+        "waterParams": "pH: 8.1-8.4, Temperature: 25-28°C",
+        "diet": "Omnivorous",
+        "tankSize": "50 liters minimum"
+    },
+    {
+        "image": "../src/assets/img/sixline_wrasse.jpg",
+        "name": "Six-Line Wrasse",
+        "scientificName": "Pseudocheilinus hexataenia",
+        "water": "saltwater",
+        "waterParams": "pH: 8.0-8.4, Temperature: 24-27°C",
+        "diet": "Carnivorous",
+        "tankSize": "50 liters minimum"
+    },
+    {
+        "image": "../src/assets/img/copperband-butterfly.jpg",
+        "name": "Copperband Butterflyfish",
+        "scientificName": "Chelmon rostratus",
+        "water": "saltwater",
+        "waterParams": "pH: 8.0-8.4, Temperature: 24-27°C",
+        "diet": "Carnivorous",
+        "tankSize": "120 liters minimum"
+    }
+]
