@@ -1,35 +1,35 @@
 <template>
-    <div class="fish-card">
-      <img :src="image" :alt="name" class="fish-image" />
-      <div class="fish-info">
-        <h3>{{ name }}</h3>
-        <p class="scientific-name"><em>{{ scientificName }}</em></p>
-      </div>
-      <div class="overlay">
-        <div class="overlay-content">
-          <p><strong>Water Type:</strong> {{ water }}</p>
-          <p><strong>Water Parameters:</strong> {{ waterParams }}</p>
-          <p><strong>Diet:</strong> {{ diet }}</p>
-          <p><strong>Tank Size:</strong> {{ tankSize }}</p>
-        </div>
+  <div class="fish-card">
+    <img :src="image" :alt="name" class="fish-image" />
+    <div class="fish-info">
+      <h3>{{ name }}</h3>
+      <p class="scientific-name"><em>{{ scientificName }}</em></p>
+    </div>
+    <div class="overlay">
+      <div class="overlay-content">
+        <p><strong>Water Type:</strong> {{ water }}</p>
+        <p><strong>Water Parameters:</strong> {{ waterParams }}</p>
+        <p><strong>Diet:</strong> {{ diet }}</p>
+        <p><strong>Tank Size:</strong> {{ tankSize }}</p>
       </div>
     </div>
-  </template>
-  
-  <script>
-  export default {
-    name: "FishCard",
-    props: {
-      image: String,
-      name: String,
-      scientificName: String,
-      water: String,
-      waterParams: String,
-      diet: String,
-      tankSize: String,
-    },
-  };
-  </script>
+  </div>
+</template>
+
+<script>
+export default {
+  name: "FishCard",
+  props: {
+    image: String,
+    name: String,
+    scientificName: String,
+    water: String,
+    waterParams: String,
+    diet: String,
+    tankSize: String,
+  },
+};
+</script>
   
   <style scoped>
   /* Card Container */

@@ -6,7 +6,6 @@
         <p>{{ description }}</p>
       </router-link>
       <div class="card-actions">
-        
         <button class="favorite-button" @click="toggleFavorite">
           <span :class="{ favorited: isFavorited }">★</span>
         </button>
@@ -16,7 +15,6 @@
 </template>
 
 <script>
-import { computed } from "vue";
 import { useArticleStore } from "../stores/articles.js";
 
 export default {
@@ -26,21 +24,24 @@ export default {
     description: { type: String, required: true },
     id: { type: Number, required: true },
   },
-  setup(props) {
-    const articleStore = useArticleStore();
-
-    const isFavorited = computed(() =>
-      articleStore.isFavorite(props.id)
-    );
-
-    const toggleFavorite = () => {
-      articleStore.toggleFavorite(props.id);
+  data() {
+    return {
+      articleStore: useArticleStore(),
     };
-
-    return { isFavorited, toggleFavorite };
+  },
+  computed: {
+    isFavorited() {
+      return this.articleStore.isFavorite(this.id);
+    },
+  },
+  methods: {
+    toggleFavorite() {
+      this.articleStore.toggleFavorite(this.id);
+    },
   },
 };
 </script>
+
 
 <style scoped>
 .article-card {

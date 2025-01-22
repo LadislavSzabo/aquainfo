@@ -1,55 +1,48 @@
 <template>
   <div class="article-list-page">
-    <!-- Add the Banner component with article-specific props -->
     <Banner 
       title="Discover Aquarium Knowledge" 
       subtitle="Read our articles about aquariums, fishkeeping, and aquascaping!" 
     />
-    
-    <!-- Main heading -->
     <h1>Our Articles</h1>
-
-    <!-- Article list -->
     <div class="article-list">
       <ArticleCard
-  v-for="(article, index) in setupArticles"
-  :key="index"
-  :name="article.name"
-  :description="article.description"
-  :id="article.id"
-/>
-
+        v-for="(article, index) in articles"
+        :key="index"
+        :name="article.name"
+        :description="article.description"
+        :id="article.id"
+      />
     </div>
   </div>
 </template>
 
 <script>
-import { onMounted, computed } from "vue";
 import { useArticleStore } from "../stores/articles.js";
 import ArticleCard from "../components/ArticleCard.vue";
 import Banner from "../components/Banner.vue";
 
 export default {
   name: "ArticleList",
-  components: {
-    ArticleCard,
-    Banner,
+  components: { ArticleCard, Banner },
+  data() {
+    return {
+      articleStore: useArticleStore(),
+    };
   },
-  setup() {
-    const articleStore = useArticleStore();
-
-    onMounted(() => {
-      if (articleStore.articles.length === 0) {
-        articleStore.fetchArticles();
-      }
-    });
-
-    const setupArticles = computed(() => articleStore.articles);
-
-    return { setupArticles };
+  computed: {
+    articles() {
+      return this.articleStore.articles;
+    },
+  },
+  created() {
+    if (this.articleStore.articles.length === 0) {
+      this.articleStore.fetchArticles();
+    }
   },
 };
 </script>
+
 
 <style scoped>
 .article-list-page {

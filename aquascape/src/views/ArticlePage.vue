@@ -13,7 +13,6 @@
 </template>
 
 <script>
-import { onMounted, computed } from "vue";
 import { useArticleStore } from "../stores/articles.js";
 
 export default {
@@ -24,29 +23,32 @@ export default {
       required: true,
     },
   },
-  setup(props) {
-    const articleStore = useArticleStore();
-
-    const fetchArticle = async () => {
-      if (articleStore.articles.length === 0) {
-        await articleStore.fetchArticles();
-      }
-    };
-
-    const article = computed(() =>
-      articleStore.articles.find((a) => a.id === Number(props.id))
-    );
-
-    onMounted(async () => {
-      await fetchArticle();
-    });
-
+  data() {
     return {
-      article,
+      article: null,
     };
+  },
+  computed: {
+    articleStore() {
+      return useArticleStore();
+    },
+  },
+  methods: {
+    async fetchArticle() {
+      if (this.articleStore.articles.length === 0) {
+        await this.articleStore.fetchArticles();
+      }
+      this.article = this.articleStore.articles.find(
+        (a) => a.id === Number(this.id)
+      );
+    },
+  },
+  mounted() {
+    this.fetchArticle();
   },
 };
 </script>
+
 
 <style scoped>
 .article-page {
